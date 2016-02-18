@@ -35,6 +35,8 @@ cache:
 
 env:
    - PLATFORMIO_CI_SRC=src/main.ino 
+   - PLATFORMIO_CI_SRC=src/Nat.h
+   - PLATFORMIO_CI_SRC=src/test.h
 install:
    - pip install -U platformio
 
