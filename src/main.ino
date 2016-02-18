@@ -4,6 +4,8 @@
  * then off for one second, repeatedly.
  */
 #include "Arduino.h"
+#include "Nat.h"
+#include <cassert>
 
 void setup()
 {
@@ -13,6 +15,10 @@ void setup()
 
 void loop()
 {
+    Nat *n = new Nat();
+
+    assert(n->hello()==2);
+    delete n;
   // turn the LED on (HIGH is the voltage level)
   digitalWrite(LED_BUILTIN, HIGH);
   // wait for a second
