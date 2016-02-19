@@ -5,11 +5,14 @@
  */
 #include "Arduino.h"
 #include "Nat.h"
+#include "Temp.h"
 
 void setup()
 {
   // initialize LED digital pin as an output.
   pinMode(LED_BUILTIN, OUTPUT);
+  Temp* temp = new Temp();
+  temp->hello();
 }
 
 void loop()
