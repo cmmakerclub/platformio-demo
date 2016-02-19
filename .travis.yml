@@ -34,15 +34,12 @@ cache:
        - "~/.platformio"
 
 env:
-  #  - PLATFORMIO_CI_SRC=src/main.ino
-  #  - PLATFORMIO_CI_SRC=src/test.h
    - PLATFORMIO_CI_SRC=src
-   - PLATFORMIO_CI_SRC=src/Nat.h
 install:
    - pip install -U platformio
 
 script:
-   - platformio ci --board=espresso_lite_v1
+   - platformio ci --board=espresso_lite_v1 --lib="."
 
 
 #
