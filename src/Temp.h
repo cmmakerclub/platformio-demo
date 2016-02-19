@@ -9,8 +9,7 @@ class Temp {
      };
 
      void hello() {
-       f
-
+       
      }
 
 };
